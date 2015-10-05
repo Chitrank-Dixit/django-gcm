@@ -30,16 +30,13 @@ setup(
     zip_safe=False,
     install_requires=[
         'django>=1.6',
-        'django-tastypie>=0.12.2-dev',
+        'django-tastypie>=0.12.2',
         'pytz>=2013.8',
         'requests>=1.2.0',
     ],
-    dependency_links=[
-        'https://github.com/django-tastypie/django-tastypie/tarball/master#egg=django-tastypie-0.12.2-dev',
-    ],
     extras_require={
         'dev': [
-            'mock>=1.0.1',
+            'mock==1.3.0',
             'coverage'
         ]
     }
